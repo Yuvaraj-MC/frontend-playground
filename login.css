@@ -1,0 +1,143 @@
+/* 1. Reset default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Page body — grey background, full screen */
+body {
+    font-family: sans-serif;
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 3. The white card in the center */
+.login-box {
+    background-color: white;
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* 4. Heading styles */
+.login-box h2 {
+    font-size: 24px;
+    color: #1a1a2e;
+    margin-bottom: 6px;
+}
+
+.subtitle {
+    font-size: 15px;
+    color: #888;
+    margin-bottom: 2rem;
+}
+
+/* 5. Each label+input pair */
+.input-group {
+    margin-bottom: 1.2rem;
+}
+
+.input-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 7px;
+}
+
+/* 6. The text input boxes */
+.input-group input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+/* Highlight the box when user clicks it */
+.input-group input:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.12);
+}
+
+/* 7. Forgot password link */
+.label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.label-row a {
+    font-size: 12px;
+    color: #4f46e5;
+    text-decoration: none;
+}
+
+/* 8. The Sign In button */
+.signin-btn {
+    width: 100%;
+    padding: 0.85rem;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 0.5rem;
+
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; if i put width 50 %  button in middle */
+}
+
+.signin-btn:hover {
+    background-color: #4338ca;
+}
+
+/* 9. The "or" divider line */
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 1.5rem 0;
+    color: #ccc;
+    font-size: 12px;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+
+/* 10. Sign up link at the bottom */
+.signup-row {
+    text-align: center;
+    font-size: 13px;
+    color: #888;
+}
+
+.signup-row a {
+    color: #4f46e5;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* 11. Responsive: smaller padding on phones */
+@media (max-width: 480px) {
+    .login-box {
+        padding: 2rem 1.25rem;
+    }
+}
